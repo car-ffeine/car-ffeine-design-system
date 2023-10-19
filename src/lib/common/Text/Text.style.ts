@@ -1,9 +1,10 @@
 import { css, styled } from 'styled-components';
 
 import type { TextProps } from '@common/Text/Text';
-import { commonStyle } from 'src/lib/styles/common';
-import { spacing } from 'src/lib/styles/spacing';
-import { lineClampStyle } from 'src/lib/styles/text';
+
+import { commonStyle } from '@style/common';
+import { spacing } from '@style/spacing';
+import { lineClampStyle } from '@style/text';
 
 export type StyledTextType = Omit<TextProps, 'lineClamp' | 'lineHeight'> & {
   $lineClamp?: number;

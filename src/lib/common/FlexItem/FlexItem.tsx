@@ -2,9 +2,11 @@ import styled from 'styled-components';
 
 import { StyledBox } from '@common/Box/Box.style';
 import type { FlexBasicLayout } from '@common/FlexBox/FlexBox';
-import type { CommonStyleProps } from 'src/lib/styles/common';
-import type { SpacingProps } from 'src/lib/styles/spacing';
-import type { BaseProps } from 'src/lib/types/base';
+
+import type { CommonStyleProps } from '@style/common';
+import type { SpacingProps } from '@style/spacing';
+
+import type { BaseProps } from '@type/base';
 
 import { flexItemStyle } from './styles/flexItem.style';
 

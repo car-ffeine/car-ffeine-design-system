@@ -1,10 +1,11 @@
 import styled, { css } from 'styled-components';
 
-import type { BoxProps } from '@common/Box/Box';
-import { spacing } from 'src/lib/styles/spacing';
-import { addUnit } from 'src/lib/utils/addUnit';
+import { addUnit } from '@utils/addUnit';
 
-import { commonStyle } from '../../styles/common';
+import type { BoxProps } from '@common/Box/Box';
+
+import { commonStyle } from '@style/common';
+import { spacing } from '@style/spacing';
 
 const addUnitForBorder = (borderProp: number | string) => {
   return typeof borderProp === 'number' ? `${borderProp}px` : borderProp;

@@ -1,6 +1,7 @@
 import type { Meta } from '@storybook/react';
 import styled from 'styled-components';
 
+import type { TextProps } from './Text';
 import Text from './Text';
 
 const meta = {
@@ -83,23 +84,7 @@ const meta = {
 
 export default meta;
 
-interface Props {
-  children: string;
-  variant:
-    | 'h1'
-    | 'h2'
-    | 'h3'
-    | 'h4'
-    | 'h5'
-    | 'h6'
-    | 'title'
-    | 'subtitle'
-    | 'label'
-    | 'body'
-    | 'caption';
-}
-
-export const Default = (args: Props) => {
+export const Default = (args: TextProps) => {
   return (
     <>
       <Text {...args} />

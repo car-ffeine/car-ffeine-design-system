@@ -1,9 +1,10 @@
 import type { CSSProp } from 'styled-components';
 
-import type { SpacingProps } from 'src/lib/styles/spacing';
-import type { BaseProps } from 'src/lib/types/base';
+import type { CommonStyleProps } from '@style/common';
+import type { SpacingProps } from '@style/spacing';
 
-import type { CommonStyleProps } from '../../styles/common';
+import type { BaseProps } from '@type/base';
+
 import type { Alignment } from './Box.style';
 import { StyledBox } from './Box.style';
 

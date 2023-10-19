@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 
-import { lineClampStyle } from 'src/lib/styles/text';
+import { lineClampStyle } from '@style/text';
 
 import type { MenusProps } from '../Menus';
 

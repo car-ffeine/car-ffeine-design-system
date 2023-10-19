@@ -2,8 +2,9 @@ import type { Meta } from '@storybook/react';
 import styled from 'styled-components';
 
 import FlexBox from '@common/FlexBox';
-import { sizeArgTypes } from 'src/lib/styles/common';
-import { spacingArgTypes } from 'src/lib/styles/spacing';
+
+import { sizeArgTypes } from '@style/common';
+import { spacingArgTypes } from '@style/spacing';
 
 import type { FlexItemProps } from './FlexItem';
 import FlexItem from './FlexItem';

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import type { ComponentPropsWithoutRef, ReactNode } from 'react';
 import { useContext } from 'react';
 
-import type { BaseProps } from 'src/lib/types/base';
+import type { BaseProps } from '@type/base';
 
 import { TabContext } from './Tab';
 import { tabMenuStyle, tabMenuWithIconStyle } from './styles/menu.style';

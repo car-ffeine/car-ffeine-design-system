@@ -1,8 +1,9 @@
 import type { Meta } from '@storybook/react';
 
 import Text from '@common/Text';
-import { sizeArgTypes } from 'src/lib/styles/common';
-import { spacingArgTypes } from 'src/lib/styles/spacing';
+
+import { sizeArgTypes } from '@style/common';
+import { spacingArgTypes } from '@style/spacing';
 
 import type { MenusProps } from './Menus';
 import Tab from './Tab';
