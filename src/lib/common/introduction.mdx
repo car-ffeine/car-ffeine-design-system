@@ -1,0 +1,296 @@
+import { Meta } from '@storybook/blocks';
+
+export const RightArrow = () => (
+  <svg
+    viewBox="0 0 14 14"
+    width="8px"
+    height="14px"
+    style={{
+      marginLeft: '4px',
+      display: 'inline-block',
+      shapeRendering: 'inherit',
+      verticalAlign: 'middle',
+      fill: 'currentColor',
+      'path fill': 'currentColor',
+    }}
+  >
+    <path d="m11.1 7.35-5.5 5.5a.5.5 0 0 1-.7-.7L10.04 7 4.9 1.85a.5.5 0 1 1 .7-.7l5.5 5.5c.2.2.2.5 0 .7Z" />
+  </svg>
+);
+
+<Meta title="Instruction" />
+
+<div className="sb-container">
+  <div className='sb-section-title'>
+# Welcome 👋🏻
+
+반갑습니다! 카페인 디자인 시스템 스토리북입니다. 좌측 메뉴를 클릭해 다양한 컴포넌트를 테스트해 보세요.<br />
+컨트롤러를 통해 컴포넌트를 직접 조작할 수 있습니다.
+설명을 먼저 읽은 뒤 조작하면 더 이해하기 쉬울 것입니다.<br />
+모든 컴포넌트들은 css 속성을 가지고 있습니다. css 속성으로 직접 스타일을 적용할 수 있습니다.<br />
+각 속성에 마우스를 올리면 그 속성의 설명, 기본값 등을 확인할 수 있습니다.<br />
+
+  </div>
+  
+  <div className="sb-section">
+    <div className="sb-section-item">
+      <h4 className="sb-section-item-heading">GitHub Repo</h4>
+      <p className="sb-section-item-paragraph">깃허브 레포지토리에서 코드를 확인하실 수 있습니다.</p>
+      <a
+        href="https://www.npmjs.com/package/car-ffeine-design-system"
+        target="_blank"
+      >Link<RightArrow /></a>
+    </div>
+    <div className="sb-section-item">
+      <h4 className="sb-section-item-heading">Npm</h4>
+      <p className="sb-section-item-paragraph">언제든지 설치하여 프로젝트에 사용하실 수 있습니다.</p>
+      <a
+        href="https://www.npmjs.com/package/yummy-design-component"
+        target="_blank"
+      >Link<RightArrow /></a>
+    </div>
+  </div>
+</div>
+
+<div className="sb-addon">
+  <div className="sb-addon-text">
+    <h4>Wait!</h4>
+    <p>1. 단위는 rem입니다.</p>
+    <p>2. Flex Box에서 Flex Item을 사용하면 Flex 속성을 더 다양하게 사용하실 수 있습니다.</p>
+  </div>
+  <div className="sb-addon-img"></div>
+</div>
+
+<div className="sb-container">
+  <div className='sb-section-title'>
+    # Layout
+
+    레이아웃 배치를 편하게 할 수 있게 도와주는 컴포넌트들입니다.
+
+  </div>
+
+  <div className="sb-section">
+    <div className="sb-features-grid">
+      <div className="sb-grid-item">
+        <h4 className="sb-section-item-heading">Box</h4>
+        <p className="sb-section-item-paragraph">가장 기본이 되는 컴포넌트입니다. 컴포넌트를 감싸거나 간격을 줄 때 사용합니다.</p>
+      </div>
+      <div className="sb-grid-item">
+        <h4 className="sb-section-item-heading">Flex Box</h4>
+        <p className="sb-section-item-paragraph">CSS Flex 속성을 이용해 자식 컴포넌트들을 유연하게 배열할 수 있습니다.</p>
+      </div>
+      <div className="sb-grid-item">
+        <h4 className="sb-section-item-heading">Flex Item</h4>
+        <p className="sb-section-item-paragraph">
+          ❗Flex Box의 자식 컴포넌트입니다. 각각의 너비와 위치 등을 조절할 수 있습니다.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className="sb-container">
+  <div className='sb-section-title'>
+    # Tab
+
+    Tab 메뉴를 편하게 만들 수 있습니다. 반드시 아래의 모양대로 만들어 주세요.
+
+    ```ts
+    // Tab이 최상위 부모
+    <Tab id="아이디">
+      // Tab 메뉴들
+      <Tab.Menus>
+        {Array.from({length: 4}, ((_, index) => <Tab.Menu key={index} label={`메뉴 ${index}`} index={index} />))}
+      </Tab.Menus>
+
+      // 각 Tab에 들어갈 내용
+      {Array.from({length: 4}, (_, index) => <Tab.Content key={index} index={index}>
+          내용 {index}
+        </Tab.Content>)}
+    </Tab>;
+    ```
+
+  </div>
+
+  <div className="sb-section">
+    <div className="sb-features-grid">
+      <div className="sb-grid-item">
+        <h4 className="sb-section-item-heading">Tab</h4>
+        <p className="sb-section-item-paragraph">간편하게 Tab을 구현할 수 있는 컴포넌트입니다.</p>
+      </div>
+      <div className="sb-grid-item">
+        <h4 className="sb-section-item-heading">Menus</h4>
+        <p className="sb-section-item-paragraph">Menu의 부모 컴포넌트입니다. 반드시 Menu를 감싸야 합니다.</p>
+      </div>
+      <div className="sb-grid-item">
+        <h4 className="sb-section-item-heading">Menu</h4>
+        <p className="sb-section-item-paragraph">
+          Menus의 자식 컴포넌트들입니다. 각 메뉴의 이름 등을 정할 수 있습니다.
+        </p>
+      </div>
+      <div className="sb-grid-item">
+        <h4 className="sb-section-item-heading">Content</h4>
+        <p className="sb-section-item-paragraph">
+          각 탭에 들어갈 내용입니다.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  {`
+  .sb-container {
+    margin-bottom: 48px;
+  }
+
+  .sb-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  .sb-section-title {
+    margin-bottom: 32px;
+  }
+
+  .sb-section a:not(h1 a, h2 a, h3 a) {
+    font-size: 14px;
+  }
+
+  .sb-section-item, .sb-grid-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sb-section-item-heading {
+    padding-top: 20px !important;
+    padding-bottom: 5px !important;
+    margin: 0 !important;
+  }
+  .sb-section-item-paragraph {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .sb-chevron {
+    margin-left: 5px;
+  }
+
+  .sb-features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px 20px;
+  }
+
+  .sb-socials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .sb-socials p {
+    margin-bottom: 10px;
+  }
+
+  .sb-explore-image {
+    max-height: 32px;
+    align-self: flex-start;
+  }
+
+  .sb-addon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #EEF3F8;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: #EEF3F8;
+    height: 180px;
+    margin-bottom: 48px;
+    overflow: hidden;
+  }
+
+  .sb-addon-text {
+    padding-left: 48px;
+  }
+
+  .sb-addon-text h4 {
+    padding-top: 0px;
+  }
+
+  .sb-addon-img {
+    position: absolute;
+    left: 345px;
+    top: 0;
+    height: 100%;
+    width: 200%;
+    overflow: hidden;
+  }
+
+  .sb-addon-img img {
+    width: 650px;
+    transform: rotate(-15deg);
+    margin-left: 40px;
+    margin-top: -72px;
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0);
+    backface-visibility: hidden;
+  }
+
+  @media screen and (max-width: 800px) {
+    .sb-addon-img {
+      left: 300px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .sb-section {
+      flex-direction: column;
+    }
+
+    .sb-features-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sb-socials {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sb-addon {
+      height: 280px;
+      align-items: flex-start;
+      padding-top: 32px;
+      overflow: hidden;
+    }
+
+    .sb-addon-text {
+      padding-left: 24px;
+    }
+
+    .sb-addon-img {
+      right: 0;
+      left: 0;
+      top: 130px;
+      bottom: 0;
+      overflow: hidden;
+      height: auto;
+      width: 124%;
+    }
+
+    .sb-addon-img img {
+      width: 1200px;
+      transform: rotate(-12deg);
+      margin-left: 0;
+      margin-top: 48px;
+      margin-bottom: -40px;
+      margin-left: -24px;
+    }
+  }
+  `}
+</style>
