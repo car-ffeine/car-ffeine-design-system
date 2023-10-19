@@ -77,5 +77,10 @@
   "homepage": "https://github.com/car-ffeine/car-ffeine-design-system",
   "resolutions": {
     "jackspeak": "2.1.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/car-ffeine/car-ffeine-design-system/issues"
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "car-ffeine-design-system@0.0.7"
 }
