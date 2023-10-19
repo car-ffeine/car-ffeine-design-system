@@ -37,18 +37,18 @@ jobs:
       - name: Install Dependencies
 
         if: steps.cache.outputs.cache-hit != 'true'
-        run: npm ci
+        run: yarn
 
       - name: Build App
-        run: npm run build
+        run: yarn build
 
       - name: Build Storybook
         run: |
-          npm run build-storybook
+          yarn build-storybook
           mv ./storybook-static ./build/storybook
 
       - name: Deploy To 'gh-pages' Branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./dist
