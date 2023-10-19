@@ -1,7 +1,7 @@
 {
   "name": "car-ffeine-design-system",
   "private": false,
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "module",
   "description": "카페인의 디자인 시스템",
   "repository": {
