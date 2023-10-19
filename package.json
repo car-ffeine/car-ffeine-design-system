@@ -1,6 +1,6 @@
 {
   "name": "car-ffeine-design-system",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "description": "카페인의 디자인 시스템",
   "repository": {
@@ -73,7 +73,7 @@
     "vite-plugin-dts": "^3.5.3",
     "vite-tsconfig-paths": "^4.2.1"
   },
-  "homepage": "https://feb-dain.github.io/layout-component/",
+  "homepage": "https://github.com/car-ffeine/car-ffeine-design-system",
   "resolutions": {
     "jackspeak": "2.1.1"
   }
