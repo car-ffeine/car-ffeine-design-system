@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-prettier",
+    "stylelint-config-clean-order"
+  ],
+  "overrides": [
+    {
+      "files": ["**/*.tsx", "**/*.ts"],
+      "customSyntax": "@stylelint/postcss-css-in-js"
+    }
+  ],
+  "rules": {
+    "color-named": "never",
+    "selector-class-pattern": null,
+    "value-keyword-case": null,
+    "no-extra-semicolons": true,
+    "property-no-unknown": null,
+    "declaration-empty-line-before": [
+      "always",
+      {
+        "ignore": ["first-nested", "after-comment", "after-declaration", "inside-single-line-block"]
+      }
+    ]
+  }
+}

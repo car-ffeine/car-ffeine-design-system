@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "target": "ES2021",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@common/*": ["src/lib/common/*"],
+      "@utils/*": ["src/lib/utils/*"],
+      "@constants": ["src/lib/common/constants/index"],
+      "@constants/*": ["src/lib/common/constants/*"],
+      "@style": ["src/lib/styles/index"],
+      "@style/*": ["src/lib/styles/*"],
+      "@assets/*": ["src/lib/common/assets/*"],
+      "@type": ["src/lib/types/index"],
+      "@type/*": ["src/lib/types/*"],
+    },
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+
+    /* Linting */
+    "strict": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "declaration": true
+  },
+  "include": ["src/lib"],
+  "exclude": ["node_modules"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
