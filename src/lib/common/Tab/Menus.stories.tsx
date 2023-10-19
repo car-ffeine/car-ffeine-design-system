@@ -15,7 +15,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: `Tab의 Menus는 FlexContainer로 구성되었습니다. layout 속성을 제외한 FlexContainer의 속성을 그대로 사용할 수 있습니다.`,
+        component: `Tab의 Menus는 FlexBox로 구성되었습니다. layout 속성을 제외한 FlexBox의 속성을 그대로 사용할 수 있습니다.`,
       },
     },
   },

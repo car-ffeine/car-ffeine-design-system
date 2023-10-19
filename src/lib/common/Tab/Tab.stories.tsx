@@ -1,5 +1,4 @@
 import type { Meta } from '@storybook/react';
-
 import { sizeArgTypes } from 'src/lib/styles/common';
 import { spacingArgTypes } from 'src/lib/styles/spacing';
 
@@ -13,7 +12,7 @@ const meta = {
     docs: {
       description: {
         component: `각 Tab 메뉴에 따라 다른 내용을 보여줄 수 있습니다. 원하는 Menu와 Content를 index로 연결하세요.
-          <br />Tab은 FlexContainer로 구성되었습니다. 따라서 FlexContainer의 속성을 그대로 사용할 수 있습니다.`,
+          <br />Tab은 FlexBox로 구성되었습니다. 따라서 FlexBox의 속성을 그대로 사용할 수 있습니다.`,
       },
     },
   },
