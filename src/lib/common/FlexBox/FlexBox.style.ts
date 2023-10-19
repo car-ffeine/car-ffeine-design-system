@@ -5,7 +5,7 @@ import { addUnit } from '@utils/addUnit';
 import { StyledBox } from '@common/Box/Box.style';
 import type { FlexBoxProps } from '@common/FlexBox/FlexBox';
 
-import { borderRadius } from '@style';
+import { borderRadius } from '@style/style';
 import { spacing } from '@style/spacing';
 
 import type { BorderRadiusDirectionType } from '@type/style';

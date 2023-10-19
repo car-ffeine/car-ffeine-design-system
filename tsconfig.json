@@ -10,13 +10,10 @@
     "paths": {
       "@common/*": ["src/lib/common/*"],
       "@utils/*": ["src/lib/utils/*"],
-      "@constants": ["src/lib/common/constants/index"],
-      "@constants/*": ["src/lib/common/constants/*"],
-      "@style": ["src/lib/styles/index"],
+      "@constants/*": ["src/lib/constants/*"],
       "@style/*": ["src/lib/styles/*"],
       "@assets/*": ["src/lib/common/assets/*"],
-      "@type": ["src/lib/types/index"],
-      "@type/*": ["src/lib/types/*"],
+      "@type/*": ["src/lib/types/*"]
     },
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -31,7 +28,7 @@
     "strict": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
+    "noFallthroughCasesInSwitch": true
   },
   "include": ["src/lib"],
   "exclude": ["node_modules"],
