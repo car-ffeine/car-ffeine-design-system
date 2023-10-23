@@ -22,7 +22,7 @@
 
 <br />
 
-### Layout
+## Layout
 
 레이아웃 배치를 편하게 할 수 있게 도와주는 컴포넌트들입니다.
 
@@ -71,3 +71,55 @@ Tab 메뉴를 편하게 만들 수 있습니다. 반드시 아래의 모양대�
 <p className="sb-section-item-paragraph">
   각 탭에 들어갈 내용입니다.
 </p>
+
+## Notice
+
+사용자에게 알려야 할 정보가 있을 때 사용하는 컴포넌트들입니다.
+
+<h4 className="sb-section-item-heading">Alert</h4>
+<p className="sb-section-item-paragraph">다양한 색깔을 이용해 사용자에게 정보를 제공할 수 있습니다. (ex. warning = 노란색)</p>
+
+<h4 className="sb-section-item-heading">Toast</h4>
+<p className="sb-section-item-paragraph">사용자 인터랙션이 발생함에 따라 알려할 정보가 있을 때 사용할 수 있습니다.</p>
+
+## Components
+
+많은 곳에서 사용할 수 있는 다양한 UI 컴포넌트들입니다.
+
+<h4 className="sb-section-item-heading">Button</h4>
+<p className="sb-section-item-paragraph">사용자가 클릭할 컴포넌트에 사용해야 합니다.</p>
+
+<h4 className="sb-section-item-heading">Error</h4>
+<p className="sb-section-item-paragraph">에러가 발생했을 때 대체 컴포넌트로 사용할 수 있습니다.</p>
+
+<h4 className="sb-section-item-heading">Modal</h4>
+<p className="sb-section-item-paragraph">컴포넌트 위에 새로운 컴포넌트를 띄울 수 있습니다.</p>
+
+<h4 className="sb-section-item-heading">Modal</h4>
+<p className="sb-section-item-paragraph">컴포넌트 위에 새로운 컴포넌트를 띄울 수 있습니다.</p>
+
+<h4 className="sb-section-item-heading">Select Box</h4>
+<p className="sb-section-item-paragraph">항목 선택 UI를 만들 때 사용할 수 있습니다.</p>
+
+<h4 className="sb-section-item-heading">Star</h4>
+<p className="sb-section-item-paragraph">별 모양의 컴포넌트 입니다. 클릭했을 때 별의 색깔을 바꿀 수 있습니다.</p>
+
+<h4 className="sb-section-item-heading">Star Ratings</h4>
+<p className="sb-section-item-paragraph">총 5개의 별이 있는 컴포넌트입니다. 별점 기능이 필요할 때 사용할 수 있습니다.</p>
+
+<h4 className="sb-section-item-heading">Text</h4>
+<p className="sb-section-item-paragraph">글자 컴포넌트입니다. 기본 p 태그이지만, 태그를 바꿀 수도 있습니다. 
+편리하게 글자 컴포넌트 스타일을 변경할 수 있습니다.</p>
+
+<h4 className="sb-section-item-heading">Text Field</h4>
+<p className="sb-section-item-paragraph">사용자의 텍스트 입력이 필요한 UI를 만들 때 사용할 수 있습니다.</p>
+
+## Loader
+
+데이터를 받아오는 동안 로더 또는 스켈레톤을 사용해 사용자 경험을 개선할 수 있습니다.
+
+<h4 className="sb-section-item-heading">Loader</h4>
+<p className="sb-section-item-paragraph">원 모양으로 돌아가는 로더입니다.</p>
+
+<h4 className="sb-section-item-heading">Skeleton</h4>
+<p className="sb-section-item-paragraph">원하는 UI 모양에 맞춰 스켈레톤을 만들 수 있습니다.</p>
