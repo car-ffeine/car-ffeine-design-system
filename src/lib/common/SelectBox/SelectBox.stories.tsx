@@ -23,9 +23,9 @@ const Container = styled.div`
 `;
 
 const options = [
-  { value: 'IONIC5', label: '아이오닉5' },
-  { value: 'TSLA3', label: '테슬라3' },
-  { value: 'tajiri', label: '지리자동차' },
+  { value: '첫 번째', label: '사과' },
+  { value: '두 번째', label: '포도' },
+  { value: '세 번째', label: '바나나' },
 ];
 
 export const Default = () => {
