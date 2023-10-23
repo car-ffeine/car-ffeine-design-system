@@ -13,7 +13,8 @@
       "@constants/*": ["src/lib/constants/*"],
       "@style/*": ["src/lib/styles/*"],
       "@assets/*": ["src/lib/common/assets/*"],
-      "@type/*": ["src/lib/types/*"]
+      "@type/*": ["src/lib/types/*"],
+      "@stores/*": ["src/lib/stores/*"]
     },
     /* Bundler mode */
     "moduleResolution": "bundler",
