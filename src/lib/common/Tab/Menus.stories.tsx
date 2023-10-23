@@ -1,9 +1,7 @@
 import type { Meta } from '@storybook/react';
 
+import { boxStyleArgTypes } from '@common/Box/Box.style';
 import Text from '@common/Text';
-
-import { sizeArgTypes } from '@style/common';
-import { spacingArgTypes } from '@style/spacing';
 
 import type { MenusProps } from './Menus';
 import Tab from './Tab';
@@ -40,8 +38,7 @@ const meta = {
     css: {
       description: 'CSS 속성을 직접 입력할 수 있습니다.',
     },
-    ...sizeArgTypes,
-    ...spacingArgTypes,
+    ...boxStyleArgTypes,
   },
 } satisfies Meta<typeof Tab.Menus>;
 

@@ -1,6 +1,5 @@
-import { css } from 'styled-components';
-
 import { addUnit } from 'src/lib/utils/addUnit';
+import { css } from 'styled-components';
 
 export interface CommonStyleProps {
   width?: number | string;
@@ -67,5 +66,17 @@ export const sizeArgTypes = {
       type: 'text',
     },
     description: '최소 너비 변경 가능',
+  },
+  maxHeight: {
+    control: {
+      type: 'text',
+    },
+    description: '최대 높이 변경 가능',
+  },
+  minHeight: {
+    control: {
+      type: 'text',
+    },
+    description: '최소 높이 변경 가능',
   },
 } as const;

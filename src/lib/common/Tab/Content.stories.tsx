@@ -2,6 +2,8 @@ import type { Meta } from '@storybook/react';
 
 import type { ContentProps } from './Content';
 import Tab from './Tab';
+import { spacingArgTypes } from '@style/spacing';
+import { sizeArgTypes } from '@style/common';
 
 const meta = {
   title: 'Tab/Content',
@@ -25,6 +27,8 @@ const meta = {
     css: {
       description: 'CSS 속성을 직접 입력할 수 있습니다.',
     },
+    ...sizeArgTypes,
+    ...spacingArgTypes,
   },
 } satisfies Meta<typeof Tab.Content>;
 

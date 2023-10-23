@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/react';
-import { sizeArgTypes } from 'src/lib/styles/common';
-import { spacingArgTypes } from 'src/lib/styles/spacing';
+
+import { boxStyleArgTypes } from '@common/Box/Box.style';
 
 import type { TabProps } from './Tab';
 import Tab from './Tab';
@@ -24,8 +24,7 @@ const meta = {
     css: {
       description: 'CSS 속성을 직접 입력할 수 있습니다.',
     },
-    ...sizeArgTypes,
-    ...spacingArgTypes,
+    ...boxStyleArgTypes,
   },
 } satisfies Meta<typeof Tab>;
 

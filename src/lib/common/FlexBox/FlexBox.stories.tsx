@@ -9,6 +9,7 @@ import Text from '@common/Text';
 
 import type { FlexBoxProps } from './FlexBox';
 import FlexBox from './FlexBox';
+import { boxStyleArgTypes } from '@common/Box/Box.style';
 
 const Boxes = (tag?: 'li') => {
   return (
@@ -101,14 +102,23 @@ const meta = {
         'true: 플렉스 박스, 아이템 크기에 상관없이 무조건 한 줄로 정렬합니다. 아이템의 width, height가 정해져 있지 않다면 플렉스 박스의 크기만큼 늘어납니다.',
     },
     gap: {
+      control: {
+        type: 'text',
+      },
       description:
         '숫자를 입력해 플렉스 박스 안 아이템 간의 간격을 조절할 수 있습니다. `입력한 숫자 x 4px` 만큼 간격이 늘어납니다.',
     },
     rowGap: {
+      control: {
+        type: 'text',
+      },
       description:
         '숫자를 입력해 플렉스 박스 안 아이템 간의 행 높이를 조절할 수 있습니다. `입력한 숫자 x 4px` 만큼 간격이 늘어납니다.<br>❗gap이 적용되어 있으면(undefined가 아니면) row gap은 적용되지 않습니다.',
     },
     columnGap: {
+      control: {
+        type: 'text',
+      },
       description:
         '숫자를 입력해 플렉스 박스 안 아이템 간의 열 너비를 조절할 수 있습니다. `입력한 숫자 x 4px` 만큼 간격이 늘어납니다.<br>❗gap이 적용되어 있으면(undefined가 아니면) column gap은 적용되지 않습니다.',
     },
@@ -120,6 +130,7 @@ const meta = {
     css: {
       description: '원하는 css를 적용할 수 있습니다.',
     },
+    ...boxStyleArgTypes,
   },
 } satisfies Meta<typeof FlexBox>;
 

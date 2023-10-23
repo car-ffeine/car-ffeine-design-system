@@ -16,7 +16,7 @@ export interface BoxProps extends CommonStyleProps, SpacingProps, BaseProps {
    */
   alignment?: Alignment;
   /** 테두리에 둥글고(border-radius: 4px) 얇은 선(0.1px, #66666666)이 생김
-   * - 특정 방향(ex. 'left')을 넣으면 해당 부분만 얇은 선이 생김
+   * - 특정 방향(ex. 'top, left, right, bottom, x, y')을 넣으면 해당 부분만 얇은 선이 생김
    * @default false
    */
   border?: boolean | Sides;
