@@ -22,20 +22,47 @@
 
 <br />
 
+## Color
+
+<table style="border-collapse: separate; border-spacing: 12px;">
+  <tr>
+    <td style="background-color: #4D6CD0; width: 100px; height: 100px;">
+      <h4>Primary Color</h4>
+      <div>#4D6CD0</div>
+    </td>
+    <td style="background-color: #5E6AD7; width: 100px; height: 100px;">
+      <h4>Secondary Color</h4>
+      <div>#5E6AD7</div>
+    </td>
+    <td style="background-color: #E9EDF8; width: 100px; height: 100px;">
+      <h4>Light Color</h4>
+      <div>#E9EDF8</div>
+    </td>
+  </tr>
+</table>
+
+<br />
+
 ## Layout
 
 레이아웃 배치를 편하게 할 수 있게 도와주는 컴포넌트들입니다.
 
-<h4 >Box</h4>
-<p className="sb-section-item-paragraph">가장 기본이 되는 컴포넌트입니다. 컴포넌트를 감싸거나 간격을 줄 때 사용합니다.</p>
-
-<h4 >Flex Box</h4>
-<p className="sb-section-item-paragraph">CSS Flex 속성을 이용해 자식 컴포넌트들을 유연하게 배열할 수 있습니다.</p>
-
-<h4 >Flex Item</h4>
-<p className="sb-section-item-paragraph">
-  ❗Flex Box의 자식 컴포넌트입니다. 각각의 너비와 위치 등을 조절할 수 있습니다.
-</p>
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 20px;">
+  <div>
+    <h4 className="sb-section-item-heading">Box</h4>
+    <p className="sb-section-item-paragraph">가장 기본이 되는 컴포넌트입니다. 컴포넌트를 감싸거나 간격을 줄 때 사용합니다.</p>
+  </div>
+  <div>
+    <h4 className="sb-section-item-heading">Flex Box</h4>
+    <p className="sb-section-item-paragraph">CSS Flex 속성을 이용해 자식 컴포넌트들을 유연하게 배열할 수 있습니다.</p>
+  </div>
+  <div>
+    <h4 >Flex Item</h4>
+    <p className="sb-section-item-paragraph">
+      ❗Flex Box의 자식 컴포넌트입니다. 각각의 너비와 위치 등을 조절할 수 있습니다.
+    </p>
+  </div>
+</div>
 
 <br />
 
@@ -58,68 +85,93 @@ Tab 메뉴를 편하게 만들 수 있습니다. 반드시 아래의 모양대�
 </Tab>;
 ```
 
-<h4>Tab</h4>
-<p className="sb-section-item-paragraph">간편하게 Tab을 구현할 수 있는 컴포넌트입니다.</p>
-<h4 className="sb-section-item-heading">Menus</h4>
-<p className="sb-section-item-paragraph">Menu의 부모 컴포넌트입니다. 반드시 Menu를 감싸야 합니다.</p>
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 20px;">
+  <div>
+    <h4>Tab</h4>
+    <p className="sb-section-item-paragraph">간편하게 Tab을 구현할 수 있는 컴포넌트입니다.</p>
+  </div>
+  <div>
+    <h4 className="sb-section-item-heading">Menus</h4>
+    <p className="sb-section-item-paragraph">Menu의 부모 컴포넌트입니다. 반드시 Menu를 감싸야 합니다.</p>
+  </div>
+  <div>
+    <h4 className="sb-section-item-heading">Menu</h4>
+    <p className="sb-section-item-paragraph">Menus의 자식 컴포넌트들입니다. 각 메뉴의 이름 등을 정할 수 있습니다.</p>
+  </div>
+  <div>
+    <h4 className="sb-section-item-heading">Content</h4>
+    <p className="sb-section-item-paragraph">각 탭에 들어갈 내용입니다.</p>
+  </div>
+</div>
 
-<h4 className="sb-section-item-heading">Menu</h4>
-<p className="sb-section-item-paragraph">
-  Menus의 자식 컴포넌트들입니다. 각 메뉴의 이름 등을 정할 수 있습니다.
-</p>
-<h4 className="sb-section-item-heading">Content</h4>
-<p className="sb-section-item-paragraph">
-  각 탭에 들어갈 내용입니다.
-</p>
+<br />
 
 ## Notice
 
-사용자에게 알려야 할 정보가 있을 때 사용하는 컴포넌트들입니다.
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 20px;">
+  <div>
+    <h4 className="sb-section-item-heading">Alert</h4>
+    <p className="sb-section-item-paragraph">다양한 색깔을 이용해 사용자에게 정보를 제공할 수 있습니다. (ex. warning = 노란색)</p>
+  </div>
+  <div>
+    <h4 className="sb-section-item-heading">Toast</h4>
+    <p className="sb-section-item-paragraph">사용자 인터랙션이 발생함에 따라 알려할 정보가 있을 때 사용할 수 있습니다.</p>
+  </div>
+</div>
 
-<h4 className="sb-section-item-heading">Alert</h4>
-<p className="sb-section-item-paragraph">다양한 색깔을 이용해 사용자에게 정보를 제공할 수 있습니다. (ex. warning = 노란색)</p>
-
-<h4 className="sb-section-item-heading">Toast</h4>
-<p className="sb-section-item-paragraph">사용자 인터랙션이 발생함에 따라 알려할 정보가 있을 때 사용할 수 있습니다.</p>
+<br />
 
 ## Components
 
-많은 곳에서 사용할 수 있는 다양한 UI 컴포넌트들입니다.
-
-<h4 className="sb-section-item-heading">Button</h4>
-<p className="sb-section-item-paragraph">사용자가 클릭할 컴포넌트에 사용해야 합니다.</p>
-
-<h4 className="sb-section-item-heading">Error</h4>
-<p className="sb-section-item-paragraph">에러가 발생했을 때 대체 컴포넌트로 사용할 수 있습니다.</p>
-
-<h4 className="sb-section-item-heading">Modal</h4>
-<p className="sb-section-item-paragraph">컴포넌트 위에 새로운 컴포넌트를 띄울 수 있습니다.</p>
-
-<h4 className="sb-section-item-heading">Modal</h4>
-<p className="sb-section-item-paragraph">컴포넌트 위에 새로운 컴포넌트를 띄울 수 있습니다.</p>
-
-<h4 className="sb-section-item-heading">Select Box</h4>
-<p className="sb-section-item-paragraph">항목 선택 UI를 만들 때 사용할 수 있습니다.</p>
-
-<h4 className="sb-section-item-heading">Star</h4>
-<p className="sb-section-item-paragraph">별 모양의 컴포넌트 입니다. 클릭했을 때 별의 색깔을 바꿀 수 있습니다.</p>
-
-<h4 className="sb-section-item-heading">Star Ratings</h4>
-<p className="sb-section-item-paragraph">총 5개의 별이 있는 컴포넌트입니다. 별점 기능이 필요할 때 사용할 수 있습니다.</p>
-
-<h4 className="sb-section-item-heading">Text</h4>
-<p className="sb-section-item-paragraph">글자 컴포넌트입니다. 기본 p 태그이지만, 태그를 바꿀 수도 있습니다. 
-편리하게 글자 컴포넌트 스타일을 변경할 수 있습니다.</p>
-
-<h4 className="sb-section-item-heading">Text Field</h4>
-<p className="sb-section-item-paragraph">사용자의 텍스트 입력이 필요한 UI를 만들 때 사용할 수 있습니다.</p>
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 20px;">
+  <div>
+    <h4 className="sb-section-item-heading">Button</h4>
+    <p className="sb-section-item-paragraph">사용자가 클릭할 컴포넌트에 사용해야 합니다.</p>
+  </div>
+  <div>
+    <h4 className="sb-section-item-heading">Error</h4>
+    <p className="sb-section-item-paragraph">에러가 발생했을 때 대체 컴포넌트로 사용할 수 있습니다.</p>
+  </div>
+  <div>
+    <h4 className="sb-section-item-heading">Modal</h4>
+    <p className="sb-section-item-paragraph">컴포넌트 위에 새로운 컴포넌트를 띄울 수 있습니다.</p>
+  </div>
+  <div>
+    <h4 className="sb-section-item-heading">Modal</h4>
+    <p className="sb-section-item-paragraph">컴포넌트 위에 새로운 컴포넌트를 띄울 수 있습니다.</p>
+  </div>
+  <div>
+    <h4 className="sb-section-item-heading">Select Box</h4>
+    <p className="sb-section-item-paragraph">항목 선택 UI를 만들 때 사용할 수 있습니다.</p>
+  </div>
+  <div>
+    <h4 className="sb-section-item-heading">Star</h4>
+    <p className="sb-section-item-paragraph">별 모양의 컴포넌트 입니다. 클릭했을 때 별의 색깔을 바꿀 수 있습니다.</p>
+  </div>
+  <div>
+    <h4 className="sb-section-item-heading">Star Ratings</h4>
+    <p className="sb-section-item-paragraph">총 5개의 별이 있는 컴포넌트입니다. 별점 기능이 필요할 때 사용할 수 있습니다.</p>
+  </div>
+  <div>
+    <h4 className="sb-section-item-heading">Text</h4>
+    <p className="sb-section-item-paragraph">글자 컴포넌트입니다. 기본 p 태그이지만, 태그를 바꿀 수도 있습니다. 
+    편리하게 글자 컴포넌트 스타일을 변경할 수 있습니다.</p>
+  </div>
+  <div>
+    <h4 className="sb-section-item-heading">Text Field</h4>
+    <p className="sb-section-item-paragraph">사용자의 텍스트 입력이 필요한 UI를 만들 때 사용할 수 있습니다.</p>
+  </div>
+</div>
 
 ## Loader
 
-데이터를 받아오는 동안 로더 또는 스켈레톤을 사용해 사용자 경험을 개선할 수 있습니다.
-
-<h4 className="sb-section-item-heading">Loader</h4>
-<p className="sb-section-item-paragraph">원 모양으로 돌아가는 로더입니다.</p>
-
-<h4 className="sb-section-item-heading">Skeleton</h4>
-<p className="sb-section-item-paragraph">원하는 UI 모양에 맞춰 스켈레톤을 만들 수 있습니다.</p>
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 20px;">
+  <div>
+    <h4 className="sb-section-item-heading">Loader</h4>
+    <p className="sb-section-item-paragraph">원 모양으로 돌아가는 로더입니다.</p>
+  </div>
+  <div>
+    <h4 className="sb-section-item-heading">Skeleton</h4>
+    <p className="sb-section-item-paragraph">원하는 UI 모양에 맞춰 스켈레톤을 만들 수 있습니다.</p>
+  </div>
+</div>
