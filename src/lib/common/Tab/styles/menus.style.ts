@@ -24,7 +24,7 @@ export const menuContainerStyle = ({
 
   button {
     ${vertical && `box-shadow: inset 0 -3px 0 -1px #eee;`}
-    ${lineClampStyle(lineClamp ? 1 : undefined)}
+    ${lineClamp && `${lineClampStyle(1)}; white-space: nowrap;`};
   }
 
   button.active {
