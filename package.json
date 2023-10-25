@@ -1,7 +1,7 @@
 {
   "name": "car-ffeine-design-system",
   "private": false,
-  "version": "1.1.5",
+  "version": "1.1.7",
   "type": "module",
   "description": "카페인의 디자인 시스템",
   "repository": {
@@ -74,7 +74,7 @@
     "vite-plugin-dts": "^3.5.3",
     "vite-tsconfig-paths": "^4.2.1"
   },
-  "homepage": "https://653134b8c1b776a14aafb1d0-mgulygejyr.chromatic.com/?path=/docs/instruction--docs",
+  "homepage": "https://653134b8c1b776a14aafb1d0-jhamnvkham.chromatic.com/?path=/docs/instruction--docs",
   "resolutions": {
     "jackspeak": "2.1.1"
   },
