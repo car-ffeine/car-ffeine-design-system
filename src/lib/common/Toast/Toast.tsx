@@ -13,6 +13,9 @@ import { StyledToast } from './Toast.style';
 export interface ToastProps extends HTMLAttributes<HTMLDivElement> {
   toastId: number;
   message: string;
+  /** 선택한 위치에 따라 토스트가 나오는 방향 변경 가능
+   * @default 'bottom-center'
+   */
   position?: `${ToastPosition['column']}-${ToastPosition['row']}`;
   color?: Color;
   css?: CSSProp;

@@ -1,14 +1,13 @@
 import type { Meta } from '@storybook/react';
-import { styled } from 'styled-components';
+import styled from 'styled-components';
 
 import { useExternalValue } from '@utils/external-state';
 
 import { toastActions, toastListStore } from '@stores/toastStore';
 
+import Box from '@common/Box';
 import Button from '@common/Button';
-import { getToastColor } from '@common/Toast/Toast.style';
-
-import type { Color } from '@type/style';
+import { StyledToast } from '@common/Toast/Toast.style';
 
 import Text from '../Text';
 import type { ToastProps } from './Toast';
@@ -31,9 +30,6 @@ const meta = {
     message: {
       description: '원하는 글자를 입력해 테스트를 할 수 있습니다.',
     },
-    position: {
-      description: '선택한 위치에 따라 토스트가 나오는 방향을 선택할 수 있습니다.',
-    },
     color: {
       description: '선택한 색상에 따라 토스트의 색상이 변합니다.',
     },
@@ -52,7 +48,7 @@ export const Default = (args: ToastProps) => {
   const { message, position, color } = args;
 
   return (
-    <>
+    <Box height={30}>
       <Button
         width={10}
         height={4}
@@ -66,9 +62,15 @@ export const Default = (args: ToastProps) => {
           <Toast key={toastItem.toastId} {...toastItem} />
         ))}
       </>
-    </>
+    </Box>
   );
 };
+
+const ToastForStorybook = styled(StyledToast)`
+  position: initial;
+  transform: none;
+  margin-bottom: 4rem;
+`;
 
 export const Colors = () => {
   return (
@@ -76,59 +78,35 @@ export const Colors = () => {
       <Text variant="h5" mb={4}>
         Primary
       </Text>
-      <S.Toast color="primary">이삭 토스트</S.Toast>
+      <ToastForStorybook color="primary">이삭 토스트</ToastForStorybook>
       <Text variant="h5" mb={4}>
         Secondary
       </Text>
-      <S.Toast color="secondary">이삭 토스트</S.Toast>
+      <ToastForStorybook color="secondary">이삭 토스트</ToastForStorybook>
       <Text variant="h5" mb={4}>
         Success
       </Text>
-      <S.Toast color="success">이삭 토스트</S.Toast>
+      <ToastForStorybook color="success">이삭 토스트</ToastForStorybook>
       <Text variant="h5" mb={4}>
         Warning
       </Text>
-      <S.Toast color="warning">이삭 토스트</S.Toast>
+      <ToastForStorybook color="warning">이삭 토스트</ToastForStorybook>
       <Text variant="h5" mb={4}>
         Error
       </Text>
-      <S.Toast color="error">이삭 토스트</S.Toast>
+      <ToastForStorybook color="error">이삭 토스트</ToastForStorybook>
       <Text variant="h5" mb={4}>
         Info
       </Text>
-      <S.Toast color="info">이삭 토스트</S.Toast>
+      <ToastForStorybook color="info">이삭 토스트</ToastForStorybook>
       <Text variant="h5" mb={4}>
         Light
       </Text>
-      <S.Toast color="light">이삭 토스트</S.Toast>
+      <ToastForStorybook color="light">이삭 토스트</ToastForStorybook>
       <Text variant="h5" mb={4}>
         Dark
       </Text>
-      <S.Toast color="dark">이삭 토스트</S.Toast>
+      <ToastForStorybook color="dark">이삭 토스트</ToastForStorybook>
     </>
   );
-};
-
-const S = {
-  Toast: styled.div<{ color: Color }>`
-    width: max-content;
-    max-width: 40rem;
-    margin-bottom: 2rem;
-    padding: 1.2rem 2.4rem;
-
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 1.5;
-    color: #fff;
-    text-align: center;
-    word-break: keep-all;
-
-    border-radius: 28px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    ${({ color }) => getToastColor(color)}
-  `,
 };

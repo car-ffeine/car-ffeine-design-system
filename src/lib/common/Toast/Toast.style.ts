@@ -25,7 +25,7 @@ export const StyledToast = styled.div<StyleProps>`
   color: #fff;
 
   ${({ color }) => getToastColor(color)};
-  ${({ position, duration }) => getPopupAnimation(position, duration)}
+  ${({ position = 'bottom-center', duration }) => getPopupAnimation(position, duration)}
 
   ${({ css }) => css}
 `;
