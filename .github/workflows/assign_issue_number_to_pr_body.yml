@@ -18,13 +18,12 @@ jobs:
                 repo: context.repo.repo,
                 pull_number: context.issue.number
             });
-            console.log(pr);
             const body = pr.data.body;
             const issueNumber= pr.data.head.ref.split('/')[1];
             const newBody = body + "\n\n" + "close #" + issueNumber;
             await github.pulls.update({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
-                  pull_number: context.issue는.number,
+                  pull_number: context.issue.number,
                   body: newBody
               });
