@@ -1,7 +1,7 @@
 {
   "name": "car-ffeine-design-system",
   "private": false,
-  "version": "1.1.7",
+  "version": "1.1.8",
   "type": "module",
   "description": "카페인의 디자인 시스템",
   "repository": {
@@ -45,7 +45,7 @@
     "@storybook/testing-library": "0.2.1",
     "@stylelint/postcss-css-in-js": "^0.38.0",
     "@trivago/prettier-plugin-sort-imports": "^4.2.0",
-    "@types/node": "^20.6.2",
+    "@types/node": "^20.9.0",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
@@ -74,7 +74,7 @@
     "vite-plugin-dts": "^3.5.3",
     "vite-tsconfig-paths": "^4.2.1"
   },
-  "homepage": "https://653134b8c1b776a14aafb1d0-jhamnvkham.chromatic.com/?path=/docs/instruction--docs",
+  "homepage": "https://github.com/car-ffeine/car-ffeine-design-system",
   "resolutions": {
     "jackspeak": "2.1.1"
   },

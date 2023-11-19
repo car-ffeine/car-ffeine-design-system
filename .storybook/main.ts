@@ -21,6 +21,7 @@ const config: StorybookConfig = {
     name: '@storybook/react-vite',
     options: {},
   },
+  previewHead: (head) => `${head}`,
   docs: {
     autodocs: 'tag',
   },
