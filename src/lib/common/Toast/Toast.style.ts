@@ -15,7 +15,7 @@ export const StyledToast = styled.div<StyleProps>`
   width: max-content;
   max-width: 40rem;
   z-index: 99999;
-  padding: 1.2rem 2.4rem 1rem;
+  padding: 1.2rem 2.4rem;
   font-size: 1.5rem;
   text-align: center;
   word-break: keep-all;
