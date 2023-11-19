@@ -1,6 +1,6 @@
 # 카페인 디자인 시스템
 
-<a href="https://653134b8c1b776a14aafb1d0-byjubfeclw.chromatic.com/?path=/docs/instruction--docs">📚 스토리북 보기</a>
+<a href="https://653134b8c1b776a14aafb1d0-meiaxlmapb.chromatic.com/?path=/docs/instruction--docs">📚 스토리북 보기</a>
 
 ## Welcome 👋🏻
 
